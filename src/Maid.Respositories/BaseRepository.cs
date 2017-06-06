@@ -26,26 +26,36 @@ namespace Maid.Respositories
 
         public IQueryable<T> Filter(Expression<Func<T, bool>> predicate)
         {
-            return _context.Set<T>().Where<T>(predicate).AsQueryable<T>();
+            return _context.Set<T>().Where(predicate).AsQueryable();
         }
 
-        public IQueryable<T> Filter(Expression<Func<T, bool>> filter, out int total, int index = 0, int size = 50)
-        {
-            var resetSet = filter != null ? _context.Set<T>().Where<T>(filter).AsQueryable() : _context.Set<T>().AsQueryable();
-            var skipCount = index * size;
-            resetSet = skipCount == 0 ? resetSet.Take(size) : resetSet.Skip(skipCount).Take(size);
-            total = resetSet.Count();
-            return resetSet;
-        }
-
-        public IQueryable<T> Including(params Expression<Func<T, object>>[] includeProperties)
+        public IQueryable<T> Including(Expression<Func<T, bool>> predicate, params Expression<Func<T, object>>[] includeProperties)
         {
             IQueryable<T> query = _context.Set<T>();
             foreach (var includeProperty in includeProperties)
             {
                 query = query.Include(includeProperty);
             }
-            return query;
+            return query.Where(predicate);
+        }
+
+        public IQueryable<T> OrderBy<TKey>(Expression<Func<T, bool>> predicate, Expression<Func<T, TKey>> orderby)
+        {
+            IQueryable<T> query = _context.Set<T>();
+            var resetSet = predicate != null ? query.Where(predicate) : query;
+            resetSet = orderby != null ? resetSet.OrderBy(orderby) : resetSet;
+            return resetSet;
+        }
+
+        public IQueryable<T> Page<TKey>(Expression<Func<T, bool>> predicate, Expression<Func<T, TKey>> orderby, out int total, int index = 0, int size = 50)
+        {
+            IQueryable<T> query = _context.Set<T>();
+            var resetSet = predicate != null ? query.Where(predicate) : query;
+            total = resetSet.Count();
+            resetSet = orderby != null ? resetSet.OrderBy(orderby) : resetSet;
+            var skipCount = index * size;
+            resetSet = skipCount == 0 ? resetSet.Take(size) : resetSet.Skip(skipCount).Take(size);
+            return resetSet;
         }
 
         public int Count()
@@ -80,7 +90,7 @@ namespace Maid.Respositories
 
         public void Delete(T entity)
         {
-            var dbEntityEntry = _context.Entry<T>(entity);
+            var dbEntityEntry = _context.Entry(entity);
             dbEntityEntry.State = EntityState.Deleted;
         }
 
@@ -89,13 +99,13 @@ namespace Maid.Respositories
             IQueryable<T> entities = _context.Set<T>().Where(predicate);
             foreach (var entity in entities)
             {
-                _context.Entry<T>(entity).State = EntityState.Deleted;
+                _context.Entry(entity).State = EntityState.Deleted;
             }
         }
 
         public void Update(T entity)
         {
-            var dbEntityEntry = _context.Entry<T>(entity);
+            var dbEntityEntry = _context.Entry(entity);
             dbEntityEntry.State = EntityState.Modified;
         }
 

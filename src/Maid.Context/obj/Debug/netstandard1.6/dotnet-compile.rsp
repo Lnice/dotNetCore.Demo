@@ -1,5 +1,5 @@
---temp-output:c:\users\xzhf\documents\visual studio 2015\Projects\Maid\Maid.Context\obj\Debug\netstandard1.6\
---out:c:\users\xzhf\documents\visual studio 2015\Projects\Maid\Maid.Context\bin\Debug\netstandard1.6\Maid.Context.dll
+--temp-output:C:\Users\xzhf\Documents\Visual Studio 2015\Projects\Maid\src\Maid.Context\obj\Debug\netstandard1.6\
+--out:C:\Users\xzhf\Documents\Visual Studio 2015\Projects\Maid\src\Maid.Context\bin\Debug\netstandard1.6\Maid.Context.dll
 --define:DEBUG
 --define:TRACE
 --define:NETSTANDARD1_6
@@ -94,18 +94,18 @@
 --reference:C:\Users\xzhf\.nuget\packages\System.Threading.Timer\4.3.0\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\xzhf\.nuget\packages\System.Xml.ReaderWriter\4.3.0\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\xzhf\.nuget\packages\System.Xml.XDocument\4.3.0\ref\netstandard1.3\System.Xml.XDocument.dll
-c:\users\xzhf\documents\visual studio 2015\Projects\Maid\Maid.Context\ApplicationDbContext.cs
-c:\users\xzhf\documents\visual studio 2015\Projects\Maid\Maid.Context\DbConfiguration.cs
-c:\users\xzhf\documents\visual studio 2015\Projects\Maid\Maid.Context\Properties\AssemblyInfo.cs
-c:\users\xzhf\documents\visual studio 2015\Projects\Maid\Maid.Context\Repository\IRepository.cs
-c:\users\xzhf\documents\visual studio 2015\Projects\Maid\Maid.Context\Repository\IUserRepository.cs
-c:\users\xzhf\documents\visual studio 2015\Projects\Maid\Maid.Context\Repository\IUserRoleRepository.cs
-c:\users\xzhf\documents\visual studio 2015\Projects\Maid\Maid.Context\Tables\Info_Menu.cs
-c:\users\xzhf\documents\visual studio 2015\Projects\Maid\Maid.Context\Tables\Info_MenuRole.cs
-c:\users\xzhf\documents\visual studio 2015\Projects\Maid\Maid.Context\Tables\Info_Oper.cs
-c:\users\xzhf\documents\visual studio 2015\Projects\Maid\Maid.Context\Tables\Info_OperRole.cs
-c:\users\xzhf\documents\visual studio 2015\Projects\Maid\Maid.Context\Tables\Info_Role.cs
-c:\users\xzhf\documents\visual studio 2015\Projects\Maid\Maid.Context\Tables\Info_User.cs
-c:\users\xzhf\documents\visual studio 2015\Projects\Maid\Maid.Context\Tables\Info_UserRole.cs
-c:\users\xzhf\documents\visual studio 2015\Projects\Maid\Maid.Context\Tables\Log_Oper.cs
-c:\users\xzhf\documents\visual studio 2015\Projects\Maid\Maid.Context\Tables\Log_User.cs
+C:\Users\xzhf\Documents\Visual Studio 2015\Projects\Maid\src\Maid.Context\ApplicationDbContext.cs
+C:\Users\xzhf\Documents\Visual Studio 2015\Projects\Maid\src\Maid.Context\DbConfiguration.cs
+C:\Users\xzhf\Documents\Visual Studio 2015\Projects\Maid\src\Maid.Context\Properties\AssemblyInfo.cs
+C:\Users\xzhf\Documents\Visual Studio 2015\Projects\Maid\src\Maid.Context\Repository\IRepository.cs
+C:\Users\xzhf\Documents\Visual Studio 2015\Projects\Maid\src\Maid.Context\Repository\IUserRepository.cs
+C:\Users\xzhf\Documents\Visual Studio 2015\Projects\Maid\src\Maid.Context\Repository\IUserRoleRepository.cs
+C:\Users\xzhf\Documents\Visual Studio 2015\Projects\Maid\src\Maid.Context\Tables\Info_Menu.cs
+C:\Users\xzhf\Documents\Visual Studio 2015\Projects\Maid\src\Maid.Context\Tables\Info_MenuRole.cs
+C:\Users\xzhf\Documents\Visual Studio 2015\Projects\Maid\src\Maid.Context\Tables\Info_Oper.cs
+C:\Users\xzhf\Documents\Visual Studio 2015\Projects\Maid\src\Maid.Context\Tables\Info_OperRole.cs
+C:\Users\xzhf\Documents\Visual Studio 2015\Projects\Maid\src\Maid.Context\Tables\Info_Role.cs
+C:\Users\xzhf\Documents\Visual Studio 2015\Projects\Maid\src\Maid.Context\Tables\Info_User.cs
+C:\Users\xzhf\Documents\Visual Studio 2015\Projects\Maid\src\Maid.Context\Tables\Info_UserRole.cs
+C:\Users\xzhf\Documents\Visual Studio 2015\Projects\Maid\src\Maid.Context\Tables\Log_Oper.cs
+C:\Users\xzhf\Documents\Visual Studio 2015\Projects\Maid\src\Maid.Context\Tables\Log_User.cs

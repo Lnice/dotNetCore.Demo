@@ -8,8 +8,9 @@ namespace Maid.Context.Repository
     {
         IQueryable<T> All();
         IQueryable<T> Filter(Expression<Func<T, bool>> predicate);
-        IQueryable<T> Filter(Expression<Func<T, bool>> filter, out int total, int index = 0, int size = 50);
-        IQueryable<T> Including(params Expression<Func<T, object>>[] includeProperties);
+        IQueryable<T> Including(Expression<Func<T, bool>> predicate, params Expression<Func<T, object>>[] includeProperties);
+        IQueryable<T> OrderBy<TKey>(Expression<Func<T, bool>> predicate, Expression<Func<T, TKey>> orderby);
+        IQueryable<T> Page<TKey>(Expression<Func<T, bool>> predicate, Expression<Func<T, TKey>> orderby, out int total, int index = 0, int size = 50);
         int Count();
         T Single(Expression<Func<T, bool>> expression);
         T Single(Expression<Func<T, bool>> predicate, params Expression<Func<T, object>>[] includeProperties);

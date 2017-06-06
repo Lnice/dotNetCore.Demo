@@ -8,8 +8,8 @@
 -debug:full
 -nostdlib
 -nologo
-"c:\users\xzhf\documents\visual studio 2015\Projects\Maid\Maid.Respositories\obj\Debug\netstandard1.6\dotnet-compile.assemblyinfo.cs"
--out:"c:\users\xzhf\documents\visual studio 2015\Projects\Maid\Maid.Respositories\bin\Debug\netstandard1.6\Maid.Respositories.dll"
+"C:\Users\xzhf\Documents\Visual Studio 2015\Projects\Maid\src\Maid.Respositories\obj\Debug\netstandard1.6\dotnet-compile.assemblyinfo.cs"
+-out:"C:\Users\xzhf\Documents\Visual Studio 2015\Projects\Maid\src\Maid.Respositories\bin\Debug\netstandard1.6\Maid.Respositories.dll"
 -r:"C:\Users\xzhf\.nuget\packages\Microsoft.AspNetCore.Hosting.Abstractions\1.1.1\lib\netstandard1.3\Microsoft.AspNetCore.Hosting.Abstractions.dll"
 -r:"C:\Users\xzhf\.nuget\packages\Microsoft.AspNetCore.Hosting.Server.Abstractions\1.1.1\lib\netstandard1.3\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll"
 -r:"C:\Users\xzhf\.nuget\packages\Microsoft.AspNetCore.Http.Abstractions\1.1.1\lib\netstandard1.3\Microsoft.AspNetCore.Http.Abstractions.dll"
@@ -92,8 +92,8 @@
 -r:"C:\Users\xzhf\.nuget\packages\System.Threading.Timer\4.3.0\ref\netstandard1.2\System.Threading.Timer.dll"
 -r:"C:\Users\xzhf\.nuget\packages\System.Xml.ReaderWriter\4.3.0\ref\netstandard1.3\System.Xml.ReaderWriter.dll"
 -r:"C:\Users\xzhf\.nuget\packages\System.Xml.XDocument\4.3.0\ref\netstandard1.3\System.Xml.XDocument.dll"
--r:"c:\users\xzhf\documents\visual studio 2015\Projects\Maid\Maid.Context\bin\Debug\netstandard1.6\Maid.Context.dll"
-"c:\users\xzhf\documents\visual studio 2015\Projects\Maid\Maid.Respositories\BaseRepository.cs"
-"c:\users\xzhf\documents\visual studio 2015\Projects\Maid\Maid.Respositories\UserRepository.cs"
-"c:\users\xzhf\documents\visual studio 2015\Projects\Maid\Maid.Respositories\UserRoleRepository.cs"
-"c:\users\xzhf\documents\visual studio 2015\Projects\Maid\Maid.Respositories\Properties\AssemblyInfo.cs"
+-r:"C:\Users\xzhf\Documents\Visual Studio 2015\Projects\Maid\src\Maid.Context\bin\Debug\netstandard1.6\Maid.Context.dll"
+"C:\Users\xzhf\Documents\Visual Studio 2015\Projects\Maid\src\Maid.Respositories\BaseRepository.cs"
+"C:\Users\xzhf\Documents\Visual Studio 2015\Projects\Maid\src\Maid.Respositories\UserRepository.cs"
+"C:\Users\xzhf\Documents\Visual Studio 2015\Projects\Maid\src\Maid.Respositories\UserRoleRepository.cs"
+"C:\Users\xzhf\Documents\Visual Studio 2015\Projects\Maid\src\Maid.Respositories\Properties\AssemblyInfo.cs"
